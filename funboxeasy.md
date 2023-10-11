@@ -1,4 +1,4 @@
-# FunboxEasy
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d26d600d-52d9-43a7-8326-0eb484876420)# FunboxEasy
 
 ```shell
 > rustscan -b 1000 -u 5000 -r 0-65535 -a 192.168.196.111 -- -Pn
@@ -173,3 +173,97 @@ Nmap done: 1 IP address (1 host up) scanned in 91.76 seconds
 TCP 80 - HTTP
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/56b386c2-5a59-4626-ab8e-3c16af480094)
 
+```shell
+> dirsearch -u http://192.168.196.111
+```
+```shell
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11715
+
+Output: /home/superuser/reports/http_192.168.196.111/_23-10-11_07-09-55.txt
+
+Target: http://192.168.196.111/
+
+[07:09:55] Starting: 
+[07:10:25] 403 -  280B  - /.ht_wsr.txt                                      
+[07:10:25] 403 -  280B  - /.htaccess.orig                                   
+[07:10:25] 403 -  280B  - /.htaccess_sc                                     
+[07:10:25] 403 -  280B  - /.htaccessBAK
+[07:10:25] 403 -  280B  - /.htaccessOLD2
+[07:10:25] 403 -  280B  - /.htaccess.bak1                                   
+[07:10:25] 403 -  280B  - /.htaccess.sample                                 
+[07:10:25] 403 -  280B  - /.htpasswds
+[07:10:25] 403 -  280B  - /.htaccess_orig
+[07:10:25] 403 -  280B  - /.htaccessOLD
+[07:10:25] 403 -  280B  - /.htaccess_extra
+[07:10:25] 403 -  280B  - /.httr-oauth                                      
+[07:10:25] 403 -  280B  - /.html                                            
+[07:10:26] 403 -  280B  - /.htm                                             
+[07:10:26] 403 -  280B  - /.htaccess.save                                   
+[07:10:26] 403 -  280B  - /.htpasswd_test                                   
+[07:10:33] 403 -  280B  - /.php                                             
+[07:11:05] 301 -  318B  - /admin  ->  http://192.168.196.111/admin/         
+[07:11:11] 200 -    3KB - /admin/index.php                                  
+[07:11:11] 200 -    3KB - /admin/                                           
+[07:11:16] 302 -   24KB - /admin/home.php  ->  http://192.168.196.111/admin/index.php
+[07:12:00] 200 -    0B  - /checklogin.php                                   
+[07:12:15] 302 -   10KB - /dashboard.php  ->  http://192.168.196.111/index.php
+[07:12:44] 200 -    2KB - /header.php                                       
+[07:12:52] 200 -    3KB - /index.php                                        
+[07:12:52] 200 -    3KB - /index.php/login/                                 
+[07:13:08] 200 -   75B  - /logout.php                                       
+[07:13:51] 302 -    7KB - /profile.php  ->  http://192.168.196.111/index.php
+[07:13:58] 200 -   14B  - /robots.txt                                       
+[07:14:02] 301 -  319B  - /secret  ->  http://192.168.196.111/secret/       
+[07:14:03] 403 -  280B  - /server-status                                    
+[07:14:03] 403 -  280B  - /server-status/
+[07:14:03] 200 -  108B  - /secret/                                          
+[07:14:16] 301 -  318B  - /store  ->  http://192.168.196.111/store/         
+                                                                             
+Task Completed 
+```
+
+```http
+http://192.168.196.111/admin/index.php
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/2fa613d8-641a-4f09-b1f5-81fd5d688eaf)
+
+```http
+http://192.168.196.111/secret/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7f90b641-1844-4fd9-a61d-89af3949b8bf)
+
+```http
+http://192.168.196.111/store
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/11a7095c-481a-485a-b66c-f0be8d52639c)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/a8f6e1b8-8b86-4e75-8d33-5e0ffeddfe8e)
+
+Default Credentials: `admin:admin`
+
+```http
+http://192.168.196.111/store/admin.php -> http://192.168.196.111/store/admin_book.php
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8140e8d0-fc79-4064-9d15-d4ccca3f8030)
+
+```http
+http://192.168.196.111/store/admin_add.php
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/627f8f5b-0d03-4ce8-b081-2afdf89b3a66)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/54144cc0-ff01-40e2-8ef3-df8538ee37f0)
+
+Reverse Shell
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/853a6076-2f60-4ad7-813b-d20ab52ce523)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8be84fce-6047-47b6-bfc8-ff56a54093dc)
+
+Creds:
+```css
+$ cat password.txt
+ssh: yxcvbnmYYY
+gym/admin: asdfghjklXXX
+/store: admin@admin.com admin
+```
+
+SSH as Tony
