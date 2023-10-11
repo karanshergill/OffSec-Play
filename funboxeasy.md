@@ -1,4 +1,4 @@
-![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d26d600d-52d9-43a7-8326-0eb484876420)# FunboxEasy
+# Funbox Easy
 
 ```shell
 > rustscan -b 1000 -u 5000 -r 0-65535 -a 192.168.196.111 -- -Pn
