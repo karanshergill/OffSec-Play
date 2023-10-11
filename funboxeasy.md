@@ -266,4 +266,9 @@ gym/admin: asdfghjklXXX
 /store: admin@admin.com admin
 ```
 
-SSH as Tony
+Shell as Tony
+```shell
+ssh@tony
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7aa2da34-6954-41a5-b542-b414ac0724c3)
+
