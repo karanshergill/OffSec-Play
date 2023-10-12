@@ -128,3 +128,10 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 2.58 seconds
 ```
+
+```shell
+> searchsploit UnrealIRCd
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/cfa93d1c-13cc-42b3-a8f1-c4aab91b3b23)
+
+
