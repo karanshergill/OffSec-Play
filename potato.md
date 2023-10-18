@@ -149,3 +149,10 @@ FTP:
 > ftp 192.168.224.101 -P 2112
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8adaa352-db00-448f-9ce7-2cfd38202eac)
+
+Backup File
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/3ca994c3-9657-4fa5-a1f8-d257bf2c6e39)
+
+Message File
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/eaf3cf4e-8e15-4f6f-9b44-39b1cc875c34)
+
