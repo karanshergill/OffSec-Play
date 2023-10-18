@@ -162,3 +162,21 @@ HTTP:
 ```shell
 > dirsearch -u http://192.168.224.101 -i 200
 ```
+```shell
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11715
+
+Output: /home/superuser/Documents/OffSec/Machines/Potato/reports/http_192.168.224.101/_23-10-18_03-15-58.txt
+
+Target: http://192.168.224.101/
+
+[03:15:58] Starting: 
+[03:16:38] 200 -  466B  - /admin/                                           
+[03:16:40] 200 -  466B  - /admin/index.php                                  
+[03:16:40] 200 -    1KB - /admin/logs/                                      
+                                                                             
+Task Completed
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/6fdc88e1-c1da-4040-8bfb-dd778d04f881)
