@@ -141,3 +141,11 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 18.84 seconds
 ```
+
+FTP:
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/bbdfde18-c893-4094-90d9-0be4ccc12184)
+
+```shell
+> ftp 192.168.224.101 -P 2112
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8adaa352-db00-448f-9ce7-2cfd38202eac)
