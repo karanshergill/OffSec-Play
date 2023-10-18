@@ -150,9 +150,42 @@ FTP:
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8adaa352-db00-448f-9ce7-2cfd38202eac)
 
-Backup File
+PHP Backup File
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/3ca994c3-9657-4fa5-a1f8-d257bf2c6e39)
+```php
+<html>
+<head></head>
+<body>
 
+<?php
+
+$pass= "potato"; //note Change this password regularly
+
+if($_GET['login']==="1"){
+  if (strcmp($_POST['username'], "admin") == 0  && strcmp($_POST['password'], $pass) == 0) {
+    echo "Welcome! </br> Go to the <a href=\"dashboard.php\">dashboard</a>";
+    setcookie('pass', $pass, time() + 365*24*3600);
+  }else{
+    echo "<p>Bad login/password! </br> Return to the <a href=\"index.php\">login page</a> <p>";
+  }
+  exit();
+}
+?>
+
+
+  <form action="index.php?login=1" method="POST">
+                <h1>Login</h1>
+                <label><b>User:</b></label>
+                <input type="text" name="username" required>
+                </br>
+                <label><b>Password:</b></label>
+                <input type="password" name="password" required>
+                </br>
+                <input type="submit" id='submit' value='Login' >
+  </form>
+</body>
+</html>
+```
 Message File
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/eaf3cf4e-8e15-4f6f-9b44-39b1cc875c34)
 
