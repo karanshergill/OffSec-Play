@@ -267,3 +267,8 @@ User webadmin may run the following commands on serv:
     (ALL : ALL) /bin/nice /notes/*
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ea82f0b6-c920-4d99-a070-80de59f21561)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/812abf05-0d8f-4810-be9d-5b9532614a8d)
+```shell
+echo "/bin/bash" >> pwn.sh
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/78582589-ac2d-45a1-9ec3-0af5c0d65dad)
