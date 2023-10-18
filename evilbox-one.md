@@ -135,3 +135,8 @@ Nmap done: 1 IP address (1 host up) scanned in 12.51 seconds
 
 TCP 80 - HTTP
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/07f7a5f3-dc60-4316-8d45-610457af72c8)
+
+Content Discovery
+```shell
+> feroxbuster -u http://192.168.172.212 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --status-codes 200 --random-agent -x txt,php,log,bak
+```
