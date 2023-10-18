@@ -158,3 +158,7 @@ Message File
 
 HTTP:
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/fc450dcc-f1c6-45bb-91ef-45622be28469)
+
+```shell
+> dirsearch -u http://192.168.224.101 -i 200
+```
