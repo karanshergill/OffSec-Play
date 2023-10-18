@@ -266,6 +266,11 @@ Matching Defaults entries for webadmin on serv:
 User webadmin may run the following commands on serv:
     (ALL : ALL) /bin/nice /notes/*
 ```
+```http
+https://gtfobins.github.io/gtfobins/nice/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1b8de4b6-99d4-49c7-b9a9-8b93d4092134)
+
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ea82f0b6-c920-4d99-a070-80de59f21561)
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/812abf05-0d8f-4810-be9d-5b9532614a8d)
 ```shell
