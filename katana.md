@@ -268,8 +268,10 @@ http://192.168.172.83/ebook/admin_book.php
 
 TCP-8088/HTTP
 ```http
-http://192.168.172.83:8088
+http://192.168.172.83:8088/index.html
 ```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/9e50acd2-52eb-4c1e-ab30-aab778ebb301)
+
 
 ```shell
 > feroxbuster -u http://192.168.172.83:8088 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent
@@ -303,3 +305,16 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 5m     87650/87650   0s      found:7       errors:0      
 [####################] - 5m     87650/87650   274/s   http://192.168.172.83:8088/ 
 ```
+
+Extension
+```shell
+> feroxbuster -u http://192.168.172.83:8088 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent --extensions html
+```
+```shell
+
+```
+
+```http
+http://192.168.172.83:8088/upload.html
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/b3a3188a-5332-49f2-939a-33f63e698b7d)
