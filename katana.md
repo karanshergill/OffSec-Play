@@ -74,5 +74,15 @@ http://192.168.172.83/ebook/
 
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/5066a5ea-9fc9-4a25-9236-62521d63388f)
 
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/41e72082-c6a1-47cf-ae67-b4f6d7eecfcd)
 
+Default Crdentials:
+```css
+admin:admin
+```
+
+```http
+http://192.168.172.83/ebook/admin_book.php
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/20af2dbc-4835-4938-b9ae-eaa8c8e00f41)
 
