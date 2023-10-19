@@ -52,10 +52,11 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.21 seconds
 ```
 
-```http
-http://192.168.172.83/ebook/
+TCP-80/HTTP
 ```
-![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d98fcde9-8c95-4c6e-b87e-b275615b4cbc)
+http://192.168.172.83/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8b5529be-2f8b-4ba0-9853-a10eb3b95eac)
 
 
 Directory Brute-Force
@@ -65,3 +66,13 @@ Directory Brute-Force
 ```
 
 ```
+
+```http
+http://192.168.172.83/ebook/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d98fcde9-8c95-4c6e-b87e-b275615b4cbc)
+
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/5066a5ea-9fc9-4a25-9236-62521d63388f)
+
+
+
