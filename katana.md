@@ -268,5 +268,38 @@ http://192.168.172.83/ebook/admin_book.php
 
 TCP-8088/HTTP
 ```http
+http://192.168.172.83:8088
+```
 
+```shell
+> feroxbuster -u http://192.168.172.83:8088 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent
+```
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.172.83:8088
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET       11l       25w      195c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       23l       73w      655c http://192.168.172.83:8088/
+301      GET       14l      109w     1260c http://192.168.172.83:8088/img => http://192.168.172.83:8088/img/
+301      GET       14l      109w     1260c http://192.168.172.83:8088/cgi-bin => http://192.168.172.83:8088/cgi-bin/
+301      GET       14l      109w     1260c http://192.168.172.83:8088/docs => http://192.168.172.83:8088/docs/
+301      GET       14l      109w     1260c http://192.168.172.83:8088/css => http://192.168.172.83:8088/css/
+301      GET       14l      109w     1260c http://192.168.172.83:8088/protected => http://192.168.172.83:8088/protected/
+301      GET       14l      109w     1260c http://192.168.172.83:8088/blocked => http://192.168.172.83:8088/blocked/
+[####################] - 5m     87650/87650   0s      found:7       errors:0      
+[####################] - 5m     87650/87650   274/s   http://192.168.172.83:8088/ 
 ```
