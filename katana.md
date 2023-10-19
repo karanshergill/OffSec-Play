@@ -214,8 +214,29 @@ Directory Brute-Force
 ```
 > feroxbuster -u http://192.168.172.83 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --status-codes 200 --random-agent
 ```
-```
-
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.172.83
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        9l       31w      276c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+403      GET        9l       28w      279c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       23l       73w      655c http://192.168.172.83/
+301      GET        9l       28w      316c http://192.168.172.83/ebook => http://192.168.172.83/ebook/
+[####################] - 5m     87650/87650   0s      found:2       errors:0      
+[####################] - 5m     87650/87650   275/s   http://192.168.172.83/   
 ```
 
 ```http
@@ -237,4 +258,13 @@ http://192.168.172.83/ebook/admin_book.php
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/20af2dbc-4835-4938-b9ae-eaa8c8e00f41)
 
+```shell
+> searchsploit cse bookstore
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1e77690b-9c36-45fa-9f6f-0a7da4cf270d)
 
+
+TCP-8088/HTTP
+```http
+
+```
