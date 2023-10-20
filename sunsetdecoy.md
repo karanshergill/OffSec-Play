@@ -172,4 +172,4 @@ Archive:  save.zip
   inflating: etc/hosts               
  extracting: etc/hostname 
 ```
-![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/38b6d12f-3694-4011-a620-da98b6396005)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/23eb7457-c8da-451a-9669-b5ca0dc29723)
