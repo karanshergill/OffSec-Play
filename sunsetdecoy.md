@@ -202,3 +202,4 @@ server           (296640a3b825115a47b68fc44501c828)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/099ec0d4-40dc-45cf-bb0f-aed100f6a671)
