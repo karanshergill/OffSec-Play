@@ -271,3 +271,4 @@ PSPY
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/af6f3248-5550-4847-90d2-c4ef7159b6d4)
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/15487712-725b-4abe-bc6c-ec74bf9de091)
 
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/5bdcbb6c-24fe-4fd7-832a-beaef284fb6c)
