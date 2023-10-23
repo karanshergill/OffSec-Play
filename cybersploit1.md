@@ -46,3 +46,6 @@ Nmap done: 1 IP address (1 host up) scanned in 0.20 seconds
 http://192.168.187.92/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/2b132ff5-f7b3-431e-b8d8-aa32c3efb864)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/c944b990-66f2-4a8b-b39b-9d3b0cb48df3)
+
+
