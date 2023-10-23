@@ -105,3 +105,9 @@ Ubuntu 12.04.5 LTS \n \l
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/340443b1-3c1f-4754-a82b-3ef77be63321)
 
+```
+itsskv@cybersploit-CTF:~$ cd /tmp
+itsskv@cybersploit-CTF:/tmp$ nano exploit.c
+itsskv@cybersploit-CTF:/tmp$ chmod +x exploit.c 
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8480e4ea-72ec-499a-bb79-496f5e2570a2)
