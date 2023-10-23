@@ -113,3 +113,5 @@ itsskv@cybersploit-CTF:/tmp$ nano exploit.c
 itsskv@cybersploit-CTF:/tmp$ chmod +x exploit.c 
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/8480e4ea-72ec-499a-bb79-496f5e2570a2)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/75120969-2663-440d-8eb3-99bdc9af5605)
+
