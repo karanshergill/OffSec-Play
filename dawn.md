@@ -175,7 +175,17 @@ TCP 80/HTTP
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d40fe019-90cb-49aa-942a-219d8b1cd8c4)
 
 ```
-> feroxbuster -u http://192.168.187.11 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent
+> feroxbuster -u http://192.168.187.11 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404
 
 
 ```
+
+```
+http://192.168.187.11/logs/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1a884529-734e-4bb5-8c0a-9ab1e01e7097)
+
+```
+http://192.168.187.11/cctv/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/dc9f1ac9-86e9-460d-85bb-6ec5097fadbf)
