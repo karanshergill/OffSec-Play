@@ -120,3 +120,4 @@ itsskv@cybersploit-CTF:/tmp$ ./exploit
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/75120969-2663-440d-8eb3-99bdc9af5605)
 
+---
