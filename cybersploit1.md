@@ -50,3 +50,39 @@ http://192.168.187.92/
 ```
 username:itsskv
 ```
+
+Feroxbuster
+```
+> feroxbuster -u http://192.168.187.92 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404
+
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.187.92
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET       10l       30w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+404      GET        9l       32w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       50l      133w     2333c http://192.168.187.92/
+200      GET       50l      133w     2333c http://192.168.187.92/index
+200      GET        1l        1w       53c http://192.168.187.92/robots
+200      GET        0l        0w  3757743c http://192.168.187.92/hacker
+[####################] - 5m     87650/87650   0s      found:4       errors:0      
+[####################] - 5m     87650/87650   290/s   http://192.168.187.92/  
+```
+
+```
+http://192.168.187.92/robots
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/9b2f982e-ac4d-4d7e-9b4d-c2728b57dc52)
