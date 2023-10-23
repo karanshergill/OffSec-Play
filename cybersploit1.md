@@ -86,3 +86,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 http://192.168.187.92/robots
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/9b2f982e-ac4d-4d7e-9b4d-c2728b57dc52)
+```
+> echo "Y3liZXJzcGxvaXR7eW91dHViZS5jb20vYy9jeWJlcnNwbG9pdH0=" | base64 --decode
+cybersploit{youtube.com/c/cybersploit}%   
+```
