@@ -90,3 +90,18 @@ http://192.168.187.92/robots
 > echo "Y3liZXJzcGxvaXR7eW91dHViZS5jb20vYy9jeWJlcnNwbG9pdH0=" | base64 --decode
 cybersploit{youtube.com/c/cybersploit}%   
 ```
+
+SSH as `itsskv`
+```
+> ssh itsskv@192.168.187.92
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/03023a8f-5f2f-449d-bc58-2fdfb37d81f3)
+
+```
+itsskv@cybersploit-CTF:~$ uname -a
+Linux cybersploit-CTF 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:50:54 UTC 2014 i686 athlon i386 GNU/Linux
+itsskv@cybersploit-CTF:~$ cat /etc/issue
+Ubuntu 12.04.5 LTS \n \l
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/340443b1-3c1f-4754-a82b-3ef77be63321)
+
