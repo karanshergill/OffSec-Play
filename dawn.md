@@ -171,6 +171,14 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 44.00 seconds
 ```
 
+SMB Enumeration
+```
+> smbclient -L \\192.168.187.11
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ce755efd-048b-4a53-8318-55fa41395142)
+
+
+
 TCP 80/HTTP
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d40fe019-90cb-49aa-942a-219d8b1cd8c4)
 
