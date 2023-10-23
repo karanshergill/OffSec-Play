@@ -173,11 +173,15 @@ Nmap done: 1 IP address (1 host up) scanned in 44.00 seconds
 
 SMB Enumeration
 ```
-> smbclient -L \\192.168.187.11
+> smbclient -L //192.168.187.11
 ```
-![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/ce755efd-048b-4a53-8318-55fa41395142)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1eefc3eb-2353-4ae7-b9ad-2bea67a7369a)
 
+```
+> smbclient //192.168.187.11/ITDEPT
+```
 
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7c81b5d5-5ebf-40cb-959d-016253ae7c6f)
 
 TCP 80/HTTP
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/d40fe019-90cb-49aa-942a-219d8b1cd8c4)
@@ -197,3 +201,10 @@ http://192.168.187.11/logs/
 http://192.168.187.11/cctv/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/dc9f1ac9-86e9-460d-85bb-6ec5097fadbf)
+
+
+```
+http://192.168.187.11/logs/management.log
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/6b37f922-baa0-4c5e-b1c1-e30889ee9c6e)
+
