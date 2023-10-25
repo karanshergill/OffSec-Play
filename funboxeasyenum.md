@@ -285,3 +285,11 @@ www-data@funbox7:/$ cd /etc/phpmyadmin
 www-data@funbox7:/etc/phpmyadmin$ cat config-db.php
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/f70e2600-8a0f-4890-8fa6-80b75a54ab86)
+
+Switch user to Kalra
+```
+www-data@funbox7:/etc/phpmyadmin$ su karla
+su karla
+Password: tgbzhnujm!
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/dad7c59c-68a3-4ba7-b4f1-563930f3bb31)
