@@ -176,7 +176,34 @@ http://192.168.187.132/phpmyadmin/
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/45f0f5c2-ab32-4494-bb6b-0e080a5c9926)
 
 ```
+> feroxbuster -u http://192.168.187.132 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --extensions php
 
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.187.132
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 💲  Extensions            │ [php]
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET        9l       28w      280c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+404      GET        9l       31w      277c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET      375l      964w    10918c http://192.168.187.132/
+301      GET        9l       28w      323c http://192.168.187.132/javascript => http://192.168.187.132/javascript/
+200      GET      114l      263w     3828c http://192.168.187.132/mini.php
+301      GET        9l       28w      323c http://192.168.187.132/phpmyadmin => http://192.168.187.132/phpmyadmin/
+[####################] - 9m     81629/81629   0s      found:4       errors:9      
+[####################] - 9m     81629/81629   152/s   http://192.168.187.132/     
 ```
 
 ```
@@ -203,4 +230,6 @@ Upload Web Shell
 </body>
 </html>
 ```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/add10e6c-5c6b-4059-a264-d24521e4da30)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/98c5648f-8d9d-4bbe-8361-315dbc58b2f5)
 
