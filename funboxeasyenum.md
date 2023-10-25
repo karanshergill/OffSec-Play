@@ -266,3 +266,11 @@ Crack the hash
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1e25891b-54f4-4a57-9885-9d2edf71ffa2)
 
+Switch user to Oracle
+```
+www-data@funbox7:/var/www/html$ su oracle
+su oracle
+Password: hiphop
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7c133ed9-197b-425d-ba10-c2dcc8ed3d9a)
+
