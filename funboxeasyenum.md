@@ -177,7 +177,8 @@ http://192.168.187.132/phpmyadmin/
 
 ```
 > feroxbuster -u http://192.168.187.132 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --extensions php
-
+```
+```
  ___  ___  __   __     __      __         __   ___
 |__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
 |    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
