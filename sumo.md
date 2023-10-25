@@ -136,4 +136,51 @@ Nmap done: 1 IP address (1 host up) scanned in 12.32 seconds
 ```
 http://192.168.245.87/
 ```
-![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c884b60d-0d05-4cac-8313-46732c859054)
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/cd1f6b5b-4dd7-4016-bba7-e6de35e54e96)
+
+
+Response Headers
+```
+HTTP/1.1 200 OK
+Date: Wed, 25 Oct 2023 18:06:09 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Mon, 11 May 2020 17:55:10 GMT
+ETag: "1a094e-b1-5a5630c4f3177"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 146
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+```
+
+Directory Bruteforce
+```
+> feroxbuster -u http://192.168.245.87 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.245.87
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        9l       32w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+403      GET       10l       30w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET        4l       25w      177c http://192.168.245.87/
+200      GET        4l       25w      177c http://192.168.245.87/index
+[####################] - 5m     81629/81629   0s      found:2       errors:25     
+[####################] - 5m     81629/81629   283/s   http://192.168.245.87/   
+```
