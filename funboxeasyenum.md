@@ -274,3 +274,14 @@ Password: hiphop
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/7c133ed9-197b-425d-ba10-c2dcc8ed3d9a)
 
+Nothing interesting found, switching back as www-data.
+
+```
+www-data@funbox7:/$ cd /etc/phpmyadmin
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/213173c3-f12d-48ba-b415-54e07ca33a87)
+
+```
+www-data@funbox7:/etc/phpmyadmin$ cat config-db.php
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/f70e2600-8a0f-4890-8fa6-80b75a54ab86)
