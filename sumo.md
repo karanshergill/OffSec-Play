@@ -132,3 +132,8 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 12.32 seconds
 ```
+
+```
+http://192.168.245.87/
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c884b60d-0d05-4cac-8313-46732c859054)
