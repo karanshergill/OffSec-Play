@@ -250,5 +250,12 @@ Upgrade Shell
 ```
 $ /usr/bin/script -qc /bin/bash /dev/null
 ```
-![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/823c3dfb-7886-4702-8bf6-853cf73ac810)
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/c7127e55-a484-4e78-bb5c-a577d89d1fbf)
 
+```
+www-data@funbox7:/var/www/html$ cat /etc/passwd
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/900e0fa2-c796-4c98-a8f3-a0a3cc36e246)
+```
+oracle:$1$|O@GOeN\$PGb9VNu29e9s6dMNJKH/R0:1004:1004:,,,:/home/oracle:/bin/bash
+```
