@@ -132,3 +132,44 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 12.13 seconds
 ```
+
+TCP 80/HTTP
+```
+http://192.168.187.132
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/4d9987a7-5ef0-49af-b39e-460fde0a9278)
+
+
+```
+> feroxbuster -u http://192.168.187.132 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.187.132
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET        9l       28w      280c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+404      GET        9l       31w      277c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET      375l      964w    10918c http://192.168.187.132/
+301      GET        9l       28w      323c http://192.168.187.132/javascript => http://192.168.187.132/javascript/
+301      GET        9l       28w      323c http://192.168.187.132/phpmyadmin => http://192.168.187.132/phpmyadmin/
+[####################] - 4m     81629/81629   0s      found:3       errors:0      
+[####################] - 4m     81629/81629   307/s   http://192.168.187.132/ 
+```
+
+```
+
+```
