@@ -148,3 +148,13 @@ http://192.168.223.35/robots.txt
 http://192.168.223.35/sar2HTML/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/438bef78-7664-45e9-a7ce-b4bca7043cae)
+
+```
+> searchsploit sar2html 3.2.1
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/4e51793a-dee2-4983-b150-c920c143391e)
+
+```
+> searchsploit -m php/webapps/49344.py
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c58c4b88-64cb-4113-b971-b841f661c5e8)
