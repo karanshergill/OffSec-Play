@@ -138,3 +138,8 @@ TCP 80/HTTP
 http://192.168.223.35/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/31152133-0eb4-4522-bc9e-f5956a2aff7d)
+
+```
+http://192.168.223.35/robots.txt
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/4e9abd33-9946-40ed-ab55-5f65f2817b7f)
