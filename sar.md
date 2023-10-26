@@ -158,3 +158,7 @@ http://192.168.223.35/sar2HTML/
 > searchsploit -m php/webapps/49344.py
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c58c4b88-64cb-4113-b971-b841f661c5e8)
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/52e5d38e-d619-41e9-ad59-93883841f451)
+
+Privilege Escalation
+
