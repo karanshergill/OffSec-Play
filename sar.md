@@ -143,3 +143,8 @@ http://192.168.223.35/
 http://192.168.223.35/robots.txt
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/4e9abd33-9946-40ed-ab55-5f65f2817b7f)
+
+```
+http://192.168.223.35/sar2HTML/
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/438bef78-7664-45e9-a7ce-b4bca7043cae)
