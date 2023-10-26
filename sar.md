@@ -214,3 +214,18 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #
 */5  *    * * *   root    cd /var/www/html/ && sudo ./finally.sh
 ```
+
+finally.sh
+```
+#!/bin/sh
+
+./write.sh
+```
+
+write.sh
+```
+#!/bin/sh
+
+touch /tmp/gateway
+www-data@sar:/var/www/html$ 
+```
