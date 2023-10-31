@@ -395,3 +395,9 @@ root
 uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data)
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/7771d3c6-59ca-42ec-9219-e73495052e28)
+
+Root Flag
+```
+$ find / -name root.txt 2>/dev/null
+/root/root.txt
+```
