@@ -237,7 +237,7 @@ bWNYQnJmSXd4Y1ZUCjhuZksyb0RjNkxmckRtalFBQUFBbHZjMk53UUc5elkzQT0KLS0tLS1FTkQg
 T1BFTlNTSCBQUklWQVRFIEtFWS0tLS0tCg==
 ```
 ```
-> cat secret.txt | base64 -d
+> cat secret.txt | base64 -d >> id_rsa
 ```
 ```
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -278,4 +278,12 @@ Rcw85udkhNVWperg4OsiFZMpwKqcMlt8i6lVmoUBjRtBD4g5MYWRANO0Nj9VWMTbW9RLiR
 kuoRiShh6uCjGCCH/WfwCof9enCej4HEj5EPj8nZ0cMNvoARq7VnCNGTPamcXBrfIwxcVT
 8nfK2oDc6LfrDmjQAAAAlvc2NwQG9zY3A=
 -----END OPENSSH PRIVATE KEY-----
+```
+
+Username:
+`Oh yea! Almost forgot the only user on this box is “oscp”.` 
+
+SSH Login
+```
+> chmod +600 id_rsa
 ```
