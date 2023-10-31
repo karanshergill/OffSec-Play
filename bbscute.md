@@ -280,3 +280,10 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 17s     4724/4724    0s      found:10      errors:0      
 [####################] - 17s     4724/4724    273/s   http://192.168.222.128/  
 ```
+
+```
+http://192.168.222.128/index.php
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/fd3a972a-3797-4fea-a4eb-ae39505de7d3)
+
+Cute News 2.1.2 (news management system)
