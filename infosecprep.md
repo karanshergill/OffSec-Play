@@ -324,3 +324,4 @@ applicable law.
 oscp
 uid=1000(oscp) gid=1000(oscp) groups=1000(oscp),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lxd)
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/5fe69271-6777-4dfd-9da2-3777ffe41b62)
