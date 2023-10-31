@@ -339,3 +339,5 @@ command > whoami && id
 www-data
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/9801e0b1-a43f-4a82-bb99-3a03f1fba36b)
+
