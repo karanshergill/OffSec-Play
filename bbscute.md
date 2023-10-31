@@ -235,3 +235,48 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 19.76 seconds
 ```
+
+TCP 80/HTTP
+```
+http://192.168.222.128
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/00063a7f-3a66-46dc-a1de-44be1b8c6158)
+
+Content Discovery
+```
+> feroxbuster -u http://192.168.222.128  -w /usr/share/seclists/Discovery/Web-Content/common.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.222.128
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/common.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 📍  Follow Redirects      │ true
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        9l       31w      277c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+403      GET        9l       28w      280c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET      368l      933w    10701c http://192.168.222.128/
+200      GET        0l        0w        0c http://192.168.222.128/core/
+200      GET        0l        0w        0c http://192.168.222.128/docs/
+200      GET        1l       12w     1311c http://192.168.222.128/favicon.ico
+200      GET      368l      933w    10701c http://192.168.222.128/index.html
+200      GET      168l      396w     6174c http://192.168.222.128/index.php
+200      GET        0l        0w        0c http://192.168.222.128/libs/
+200      GET       13l       26w      626c http://192.168.222.128/manual/
+200      GET        0l        0w        0c http://192.168.222.128/skins/
+200      GET        0l        0w        0c http://192.168.222.128/uploads/
+[####################] - 17s     4724/4724    0s      found:10      errors:0      
+[####################] - 17s     4724/4724    273/s   http://192.168.222.128/  
+```
