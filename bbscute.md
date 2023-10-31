@@ -287,3 +287,7 @@ http://192.168.222.128/index.php
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/fd3a972a-3797-4fea-a4eb-ae39505de7d3)
 
 Cute News 2.1.2 (news management system)
+```
+> searchsploit cutenews 2.1.2
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/35532951-adc7-4fa6-b051-6d157b8960ed)
