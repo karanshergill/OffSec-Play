@@ -356,4 +356,5 @@ Matching Defaults entries for www-data on cute:
 User www-data may run the following commands on cute:
     (root) NOPASSWD: /usr/sbin/hping3 --icmp
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2c1a1d4c-8afe-40c5-af8e-cd63d382b02e)
 
