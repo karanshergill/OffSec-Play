@@ -285,5 +285,42 @@ Username:
 
 SSH Login
 ```
-> chmod +600 id_rsa
+> chmod 600 id_rsa
+```
+```
+> ssh -i id_rsa oscp@192.168.222.89
+```
+```
+Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.4.0-40-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue 31 Oct 2023 11:12:12 AM UTC
+
+  System load:  0.07               Processes:             211
+  Usage of /:   25.3% of 19.56GB   Users logged in:       0
+  Memory usage: 56%                IPv4 address for eth0: 192.168.222.89
+  Swap usage:   0%
+
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+-bash-5.0$ whoami && id
+oscp
+uid=1000(oscp) gid=1000(oscp) groups=1000(oscp),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lxd)
 ```
