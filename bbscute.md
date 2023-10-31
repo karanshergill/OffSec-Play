@@ -346,3 +346,14 @@ User Flag
 command > find / -name local.txt 2>/dev/null
 /var/www/local.txt
 ```
+
+Privilege Escalation
+```
+command > sudo -l
+Matching Defaults entries for www-data on cute:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User www-data may run the following commands on cute:
+    (root) NOPASSWD: /usr/sbin/hping3 --icmp
+```
+
