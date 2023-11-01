@@ -222,3 +222,9 @@ Decode the QR Code image.
 https://zxing.org/w/decode
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3a9cc0d9-bfcd-4584-8bd5-78db856fcb51)
+
+Seems like a rabbit hole. Content Discovery again with a bigger wordlist.
+
+```
+
+```
