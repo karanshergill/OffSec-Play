@@ -311,3 +311,8 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 16s     4724/4724    0s      found:18      errors:0      
 [####################] - 16s     4724/4724    300/s   http://192.168.241.90:7601/ 
 ```
+
+```
+http://192.168.241.90:7601/keys/
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c38716b3-096d-4302-b707-bdf72316a136)
