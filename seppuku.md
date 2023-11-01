@@ -475,3 +475,7 @@ seppuku@seppuku:~$ cat /etc/passwd
 
 Users: samurai and tanto
 
+SSH as Samurai
+```
+> ssh samurai@192.168.241.90
+```
