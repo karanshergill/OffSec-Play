@@ -133,8 +133,22 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.53 seconds
 ```
 
-
 ```
 http://192.168.241.73/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/e7f461fe-8a58-48ee-beec-62d080d77139)
+
+Content Discovery
+```
+
+```
+
+```
+http://192.168.241.73/admin/
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/103b8fe0-6439-4729-bca1-5fc478d8635a)
+
+```
+http://192.168.241.73/admin/admin.php
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/10274197-73a0-4d11-8c1b-5620faa371f1)
