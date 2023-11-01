@@ -256,6 +256,11 @@ http://192.168.241.90
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/1af3f6b0-6dba-4a6a-b2a0-ca83790ab652)
 
 ```
+http://192.168.241.90:7601
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/f8680f19-335f-45da-8bc1-c3f29456fc3d)
+
+```
 http://192.168.241.90:8088
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6d6217d7-0859-41f2-a7a6-db2195d053cc)
