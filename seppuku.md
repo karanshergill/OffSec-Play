@@ -316,3 +316,8 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 http://192.168.241.90:7601/keys/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c38716b3-096d-4302-b707-bdf72316a136)
+
+```
+http://192.168.241.90:7601/keys/private
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3a22994a-a858-4721-9be4-9f2e94788019)
