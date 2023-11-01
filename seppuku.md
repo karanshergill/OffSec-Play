@@ -264,3 +264,50 @@ http://192.168.241.90:7601
 http://192.168.241.90:8088
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6d6217d7-0859-41f2-a7a6-db2195d053cc)
+
+Content Discovery
+```
+> feroxbuster -u http://192.168.241.90:7601 -w /usr/share/seclists/Discovery/Web-Content/common.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.241.90:7601
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/common.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 📍  Follow Redirects      │ true
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        9l       31w      278c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+403      GET        9l       28w      281c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET        8l       15w      171c http://192.168.241.90:7601/
+200      GET       15l       49w      735c http://192.168.241.90:7601/a/
+200      GET       15l       49w      735c http://192.168.241.90:7601/b/
+200      GET       15l       49w      735c http://192.168.241.90:7601/c/
+200      GET      130l      571w     7244c http://192.168.241.90:7601/ckeditor/
+200      GET       15l       49w      735c http://192.168.241.90:7601/d/
+200      GET       15l       49w      749c http://192.168.241.90:7601/database/
+200      GET       15l       49w      735c http://192.168.241.90:7601/e/
+200      GET       15l       49w      735c http://192.168.241.90:7601/f/
+200      GET       15l       49w      735c http://192.168.241.90:7601/h/
+200      GET        8l       15w      171c http://192.168.241.90:7601/index.html
+200      GET       17l       69w     1139c http://192.168.241.90:7601/keys/
+200      GET      349l     1402w    16697c http://192.168.241.90:7601/production/
+200      GET       15l       49w      735c http://192.168.241.90:7601/q/
+200      GET       15l       49w      735c http://192.168.241.90:7601/r/
+200      GET       20l      102w     1745c http://192.168.241.90:7601/secret/
+200      GET       15l       49w      735c http://192.168.241.90:7601/t/
+200      GET       16l       60w      940c http://192.168.241.90:7601/w/
+[####################] - 16s     4724/4724    0s      found:18      errors:0      
+[####################] - 16s     4724/4724    300/s   http://192.168.241.90:7601/ 
+```
