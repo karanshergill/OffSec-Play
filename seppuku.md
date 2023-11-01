@@ -506,3 +506,9 @@ mkdir: cannot create directory ‘.cgi_bin’: Permission denied
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2d702322-b935-45ba-bdf0-85fd86913fee)
 
+SSH as Tanto
+```
+> ssh -i id_rsa tanto@192.168.241.90
+```
+Found SSH keys earlier
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/52abebd5-5f74-48db-b56f-8662da5681ef)
