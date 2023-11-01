@@ -59,3 +59,8 @@ PORT     STATE SERVICE      REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.78 seconds
 ```
+
+```
+http://192.168.241.90
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/1af3f6b0-6dba-4a6a-b2a0-ca83790ab652)
