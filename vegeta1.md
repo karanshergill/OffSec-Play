@@ -215,5 +215,10 @@ Decoding the code with base64 twice returns a QR Code image.
 ```
 > cat findme.txt | base64 -d | base64 -d > findme.jpg
 ```
-
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/9290c040-dbd5-4b45-9ecc-a5049d2a4e23)
+
+Decode the QR Code image.
+```
+https://zxing.org/w/decode
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3a9cc0d9-bfcd-4584-8bd5-78db856fcb51)
