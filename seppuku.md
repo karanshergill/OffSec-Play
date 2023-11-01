@@ -457,3 +457,21 @@ SSH as Seppuku
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c9649a00-f12b-438b-99d3-a5a437aefe9b)
 
 Restricted `rbash`
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c5c45b05-cdb0-4a91-8ec1-71402f84fc78)
+
+```
+seppuku@seppuku:~$ ls -lah
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/9a6b9fdc-9cc2-48f6-a4a4-925442c62fcc)
+```
+passwd: 12345685213456!@!@A
+```
+
+
+```
+seppuku@seppuku:~$ cat /etc/passwd
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/dd16f42e-2897-42e7-aa02-47a97a2e9e5a)
+
+Users: samurai and tanto
+
