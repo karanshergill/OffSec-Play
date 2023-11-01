@@ -497,3 +497,12 @@ Matching Defaults entries for samurai on seppuku:
 User samurai may run the following commands on seppuku:
     (ALL) NOPASSWD: /../../../../../../home/tanto/.cgi_bin/bin /tmp/*
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/184d7175-6cd2-41d8-9403-79fe57767fe9)
+
+Cant create directories
+```
+samurai@seppuku:/home/tanto$ mkdir .cgi_bin
+mkdir: cannot create directory ‘.cgi_bin’: Permission denied
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2d702322-b935-45ba-bdf0-85fd86913fee)
+
