@@ -321,3 +321,14 @@ http://192.168.241.90:7601/keys/
 http://192.168.241.90:7601/keys/private
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/3a22994a-a858-4721-9be4-9f2e94788019)
+
+```
+http://192.168.241.90:7601/secret/
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/cbf076e3-1854-4e49-958c-3692efd4495b)
+
+```
+http://192.168.241.90:7601/secret/hostname
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/119b98c7-9e92-4550-a8ca-b4429df39138)
+
