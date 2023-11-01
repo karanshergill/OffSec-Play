@@ -254,3 +254,8 @@ Nmap done: 1 IP address (1 host up) scanned in 36.85 seconds
 http://192.168.241.90
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/1af3f6b0-6dba-4a6a-b2a0-ca83790ab652)
+
+```
+http://192.168.241.90:8088
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6d6217d7-0859-41f2-a7a6-db2195d053cc)
