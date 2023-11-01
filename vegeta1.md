@@ -152,3 +152,8 @@ http://192.168.241.73/admin/
 http://192.168.241.73/admin/admin.php
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/10274197-73a0-4d11-8c1b-5620faa371f1)
+
+```
+http://192.168.241.73/manual/en/index.html
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/1d5f494a-5d7d-42b4-b993-500339ea1d39)
