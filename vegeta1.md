@@ -140,7 +140,38 @@ http://192.168.241.73/
 
 Content Discovery
 ```
-
+> feroxbuster -u http://192.168.241.73 -w /usr/share/seclists/Discovery/Web-Content/common.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.241.73
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/common.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 📍  Follow Redirects      │ true
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET        9l       28w      279c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+404      GET        9l       31w      276c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET        9l       12w      119c http://192.168.241.73/
+200      GET       16l       61w      940c http://192.168.241.73/admin/
+200      GET        9l       12w      119c http://192.168.241.73/index.html
+200      GET       15l       49w      741c http://192.168.241.73/image/
+200      GET       16l       59w      937c http://192.168.241.73/img/
+200      GET       13l       26w      626c http://192.168.241.73/manual/
+200      GET        2l        2w       11c http://192.168.241.73/robots.txt
+[####################] - 17s     4724/4724    0s      found:7       errors:0      
+[####################] - 16s     4724/4724    288/s   http://192.168.241.73/       
 ```
 
 ```
