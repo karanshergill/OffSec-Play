@@ -455,3 +455,5 @@ SSH as Seppuku
 > ssh seppuku@192.168.241.90
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/c9649a00-f12b-438b-99d3-a5a437aefe9b)
+
+Restricted `rbash`
