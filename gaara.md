@@ -137,3 +137,11 @@ Nmap done: 1 IP address (1 host up) scanned in 11.78 seconds
 http://192.168.166.142
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/67f191a4-5401-4f92-bf4c-1aa13c804def)
+
+Content Discovery
+```
+> feroxbuster -u http://192.168.166.142 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```
+
+```
