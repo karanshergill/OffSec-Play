@@ -178,3 +178,7 @@ http://192.168.166.142/Cryoserver
 http://192.168.166.142/iamGaara
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/01016266-653a-43c4-90f5-058dac1ef06b)
+
+```
+f1MgN9mTf9SNbzRygcU
+```
