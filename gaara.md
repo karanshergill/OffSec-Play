@@ -182,3 +182,7 @@ http://192.168.166.142/iamGaara
 ```
 f1MgN9mTf9SNbzRygcU
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/77d67418-77bd-4752-97b8-7948b78cf056)
+```
+gaara:ismyname
+```
