@@ -168,3 +168,13 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 11m   220546/220546  0s      found:2       errors:23     
 [####################] - 11m   220546/220546  345/s   http://192.168.166.142/            
 ```
+
+```
+http://192.168.166.142/Cryoserver
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/0ecd4222-92e6-41c2-a60f-40dd43784bcd)
+
+```
+http://192.168.166.142/iamGaara
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/01016266-653a-43c4-90f5-058dac1ef06b)
