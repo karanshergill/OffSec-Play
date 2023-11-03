@@ -143,5 +143,28 @@ Content Discovery
 > feroxbuster -u http://192.168.166.142 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
 ```
 ```
-
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.166.142
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 📍  Follow Redirects      │ true
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        9l       31w      277c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+403      GET        9l       28w      280c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET        5l        8w      137c http://192.168.166.142/
+200      GET      302l        3w      327c http://192.168.166.142/Cryoserver
+[####################] - 11m   220546/220546  0s      found:2       errors:23     
+[####################] - 11m   220546/220546  345/s   http://192.168.166.142/            
 ```
