@@ -224,6 +224,4 @@ permitted by applicable law.
 gaara@Gaara:~$ whoami && id
 gaara
 uid=1001(gaara) gid=1001(gaara) groups=1001(gaara)
-gaara@Gaara:~$ ls
-
 ```
