@@ -132,3 +132,16 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 11.70 seconds
 ```
+
+```
+http://192.168.166.217
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/f594e337-5d4f-4246-a85e-6380a16f9c5f)
+
+Content Discovery
+```
+> feroxbuster -u http://192.168.166.217 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```
+
+```
