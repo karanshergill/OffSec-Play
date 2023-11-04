@@ -175,6 +175,115 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/e6dd38d7-1204-4ad2-ba2f-b51378f7026c)
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/e50d60df-42f4-4628-b6ca-cd30f02818eb)
 
+WP Scan
 ```
+> wpscan --url http://192.168.166.217/assets/fonts/blog --plugins-detection aggressive --random-user-agent
+```
+```
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
 
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.25
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: http://192.168.166.217/assets/fonts/blog/ [192.168.166.217]
+[+] Started: Sat Nov  4 07:32:53 2023
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entry: Server: Apache/2.4.18 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://192.168.166.217/assets/fonts/blog/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] WordPress readme found: http://192.168.166.217/assets/fonts/blog/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] Upload directory has listing enabled: http://192.168.166.217/assets/fonts/blog/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] The external WP-Cron seems to be enabled: http://192.168.166.217/assets/fonts/blog/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 4.9.8 identified (Insecure, released on 2018-08-02).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/, Match: 'WordPress 4.9.8'
+
+[i] The main theme could not be detected.
+
+[+] Enumerating All Plugins (via Aggressive Methods)
+ Checking Known Locations - Time: 00:55:22 <=========================================================> (103860 / 103860) 100.00% Time: 00:55:22
+[+] Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[i] Plugin(s) Identified:
+
+[+] akismet
+ | Location: http://192.168.166.217/assets/fonts/blog/wp-content/plugins/akismet/
+ | Last Updated: 2023-09-13T20:24:00.000Z
+ | Readme: http://192.168.166.217/assets/fonts/blog/wp-content/plugins/akismet/readme.txt
+ | [!] The version is out of date, the latest version is 5.3
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/wp-content/plugins/akismet/, status: 200
+ |
+ | Version: 4.0.8 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/wp-content/plugins/akismet/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/wp-content/plugins/akismet/readme.txt
+
+[+] wpdiscuz
+ | Location: http://192.168.166.217/assets/fonts/blog/wp-content/plugins/wpdiscuz/
+ | Last Updated: 2023-10-31T16:29:00.000Z
+ | Readme: http://192.168.166.217/assets/fonts/blog/wp-content/plugins/wpdiscuz/readme.txt
+ | [!] The version is out of date, the latest version is 7.6.12
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/wp-content/plugins/wpdiscuz/, status: 200
+ |
+ | Version: 7.0.4 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.166.217/assets/fonts/blog/wp-content/plugins/wpdiscuz/readme.txt
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:04 <================================================================> (137 / 137) 100.00% Time: 00:00:04
+
+[i] No Config Backups Found.
+
+[!] No WPScan API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[+] Finished: Sat Nov  4 08:28:37 2023
+[+] Requests Done: 104033
+[+] Cached Requests: 7
+[+] Data Sent: 35.863 MB
+[+] Data Received: 14.059 MB
+[+] Memory used: 389.453 MB
+[+] Elapsed time: 00:55:43
 ```
