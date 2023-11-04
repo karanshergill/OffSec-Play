@@ -203,3 +203,27 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-11-04 02:59:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-11-04 03:01:45
 ```
+
+SSH as gaara
+```
+> ssh gaara@192.168.166.142
+The authenticity of host '192.168.166.142 (192.168.166.142)' can't be established.
+ED25519 key fingerprint is SHA256:XpX1VX2RtX8OaktJHdq89ZkpLlYvr88cebZ0tPZMI0I.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.166.142' (ED25519) to the list of known hosts.
+gaara@192.168.166.142's password: 
+Linux Gaara 4.19.0-13-amd64 #1 SMP Debian 4.19.160-2 (2020-11-28) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+gaara@Gaara:~$ whoami && id
+gaara
+uid=1001(gaara) gid=1001(gaara) groups=1001(gaara)
+gaara@Gaara:~$ ls
+
+```
