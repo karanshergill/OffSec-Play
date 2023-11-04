@@ -171,3 +171,10 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 5m     87650/87650   0s      found:5       errors:5      
 [####################] - 5m     87650/87650   323/s   http://192.168.166.217/
 ```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/8cd69a32-e255-48ec-aecb-19ff561dbaa0)
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/e6dd38d7-1204-4ad2-ba2f-b51378f7026c)
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/e50d60df-42f4-4628-b6ca-cd30f02818eb)
+
+```
+
+```
