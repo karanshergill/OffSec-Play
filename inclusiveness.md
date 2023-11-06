@@ -203,3 +203,9 @@ User Agent for GoogleBot
 Googlebot/2.1 (+http://www.google.com/bot.html)
 ```
 
+Request sent with GoogleBot user agent
+```
+> curl http://192.168.207.14/robots.txt --user-agent "Googlebot/2.1 (+http://www.google.com/bot.html)"
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6dc8e138-60cc-4a0b-8dc4-3c404ad80c41)
+
