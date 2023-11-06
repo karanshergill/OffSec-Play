@@ -44,3 +44,113 @@ PORT   STATE SERVICE REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.21 seconds
 ```
+
+```
+> rustscan -u 5000 -p 21,22,80 -a 192.168.207.14 -- -Pn -sCV
+```
+```
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+The Modern Day Port Scanner.
+________________________________________
+: https://discord.gg/GFrQsGy           :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+Real hackers hack time ⌛
+
+[~] The config file is expected to be at "/home/superuser/.rustscan.toml"
+[~] Automatically increasing ulimit value to 5000.
+Open 192.168.207.14:21
+Open 192.168.207.14:22
+Open 192.168.207.14:80
+[~] Starting Script(s)
+[>] Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
+
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+[~] Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-06 08:36 EST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 08:36
+Completed Parallel DNS resolution of 1 host. at 08:36, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 08:36
+Scanning 192.168.207.14 [3 ports]
+Discovered open port 21/tcp on 192.168.207.14
+Discovered open port 80/tcp on 192.168.207.14
+Discovered open port 22/tcp on 192.168.207.14
+Completed Connect Scan at 08:36, 0.15s elapsed (3 total ports)
+Initiating Service scan at 08:36
+Scanning 3 services on 192.168.207.14
+Completed Service scan at 08:36, 6.32s elapsed (3 services on 1 host)
+NSE: Script scanning 192.168.207.14.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 08:36
+NSE: [ftp-bounce 192.168.207.14:21] PORT response: 500 Illegal PORT command.
+Completed NSE at 08:36, 5.28s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 1.08s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+Nmap scan report for 192.168.207.14
+Host is up, received user-set (0.15s latency).
+Scanned at 2023-11-06 08:36:08 EST for 13s
+
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxrwxrwx    2 0        0            4096 Feb 08  2020 pub [NSE: writeable]
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.45.233
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     syn-ack OpenSSH 7.9p1 Debian 10+deb10u1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 06:1b:a3:92:83:a5:7a:15:bd:40:6e:0c:8d:98:27:7b (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8Yl88LxuiPiXQGaZ6fB6K88oCmL/yXhY4Y3j/9PjnFHPRCqM18y4Ol7Q9LMr5CN042Zs/WMt05YE99R5j98fPGD0hIqxKpRpW8ZeDsfZdG479t3dSkM0OAL+hY4V4Wwbk768DxnLUw0ujGuh38UDl3gyYVBFpFZgRb7zBuYRzjIdWijpXm23sbXti4TO6KTC4KVm1BTzT4CVFxBakuuvk1Ieraeusc9agTfCVx7dkN2OX79jAc1uzZNE+BtokFGIYMvMAA7ejZT504cp1Bccbn+OUwlcRLFJbOO2jrXPj8j4MKEz6klMO7mIMvaHFRQ1Z5kBtH7QIGG97D5qhkD8X
+|   256 cb:38:83:26:1a:9f:d3:5d:d3:fe:9b:a1:d3:bc:ab:2c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGNCidfAh8l1B4elJK42/1YqrUEBlGWDjg7ZWacpptAfCGBbSC+agR4LWiEtsnQYX4aWXRGydjc7UggCgpHbDr0=
+|   256 65:54:fc:2d:12:ac:e1:84:78:3e:00:23:fb:e4:c9:ee (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJEkCe1XYRTFeHyzWuvZ3JkIkWwD4pGHBcTGEGYYcJhv
+80/tcp open  http    syn-ack Apache httpd 2.4.38 ((Debian))
+|_http-title: Apache2 Debian Default Page: It works
+|_http-server-header: Apache/2.4.38 (Debian)
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 08:36
+Completed NSE at 08:36, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.19 seconds
+```
