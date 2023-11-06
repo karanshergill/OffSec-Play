@@ -209,3 +209,9 @@ Request sent with GoogleBot user agent
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6dc8e138-60cc-4a0b-8dc4-3c404ad80c41)
 
+```
+http://192.168.207.14/secret_information/
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6adc693b-b21d-4d04-964e-c44a5b5629e5)
+
+
