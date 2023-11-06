@@ -214,4 +214,8 @@ http://192.168.207.14/secret_information/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6adc693b-b21d-4d04-964e-c44a5b5629e5)
 
+```
+http://192.168.207.14/secret_information/?lang=en.php
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2ee1a948-2a06-48e3-a0c2-2d70ff984290)
 
