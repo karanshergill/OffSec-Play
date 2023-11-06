@@ -160,6 +160,39 @@ http://192.168.207.14/
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/df646f31-8d18-4b9f-9f4e-5d8f9856b40c)
 
+Content Discovery
+```
+> feroxbuster -u http://192.168.207.14 -w /usr/share/seclists/Discovery/Web-Content/common.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://192.168.207.14
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/common.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 📍  Follow Redirects      │ true
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        9l       31w      276c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+403      GET        9l       28w      279c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET      368l      933w    10701c http://192.168.207.14/
+200      GET      368l      933w    10701c http://192.168.207.14/index.html
+200      GET       13l       26w      626c http://192.168.207.14/manual/
+200      GET        1l       11w       59c http://192.168.207.14/robots.txt
+[####################] - 25s     4724/4724    0s      found:4       errors:37     
+[####################] - 25s     4724/4724    191/s   http://192.168.207.14/    
+```
+
 ```
 http://192.168.207.14/robots.txt
 ```
