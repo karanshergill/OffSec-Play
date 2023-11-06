@@ -165,3 +165,8 @@ http://192.168.207.14/robots.txt
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/5899f104-82a3-48d7-af14-7ec949593eb1)
 
+User Agent for GoogleBot
+```
+Googlebot/2.1 (+http://www.google.com/bot.html)
+```
+
