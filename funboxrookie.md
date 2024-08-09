@@ -277,8 +277,8 @@ local: zlatan.zip remote: zlatan.zip
 
 Crack downloaded .zip file:
 ```shell
-for file in *.zip; do
-echo "Cracking $file..."
-    fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt "$file" || true
-done
+> for file in *.zip;
+for> do echo "Cracking $file..."
+for> fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt "$file" || true
+for> done
 ```
