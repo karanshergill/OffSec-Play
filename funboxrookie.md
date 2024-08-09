@@ -335,3 +335,10 @@ Cracking file zlatan.zip
 found file 'id_rsa', (size cp/uc   1299/  1675, flags 9, chk 554b)
 ```
 ![image](https://github.com/user-attachments/assets/19bd2395-68bd-404c-837b-bc38c1db96b9)
+
+SSH Keys
+```shell
+> unzip -P catwoman cathrine.zip
+Archive:  cathrine.zip
+  inflating: id_rsa                  
+```
