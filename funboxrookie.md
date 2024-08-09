@@ -158,3 +158,40 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 10.90 seconds
 ```
+
+## FTP
+```
+> ftp 192.168.172.107
+Connected to 192.168.172.107.
+220 ProFTPD 1.3.5e Server (Debian) [::ffff:192.168.172.107]
+Name (192.168.172.107:superuser): anonymous
+331 Anonymous login ok, send your complete email address as your password
+Password: 
+230-Welcome, archive user anonymous@192.168.45.224 !
+230-
+230-The local time is: Fri Aug 09 06:01:26 2024
+230-
+230-This is an experimental FTP server.  If you have any unusual problems,
+230-please report them via e-mail to <root@funbox2>.
+230-
+230 Anonymous access granted, restrictions apply
+Remote system type is UNIX.
+Using binary mode to transfer files.
+
+ftp> ls
+229 Entering Extended Passive Mode (|||65460|)
+150 Opening ASCII mode data connection for file list
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 anna.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 ariel.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 bud.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 cathrine.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 homer.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 jessica.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 john.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 marge.zip
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 miriam.zip
+-r--r--r--   1 ftp      ftp          1477 Jul 25  2020 tom.zip
+-rw-r--r--   1 ftp      ftp           170 Jan 10  2018 welcome.msg
+-rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 zlatan.zip
+226 Transfer complete
+```
