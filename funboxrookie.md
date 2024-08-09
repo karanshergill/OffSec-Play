@@ -195,3 +195,90 @@ ftp> ls
 -rw-rw-r--   1 ftp      ftp          1477 Jul 25  2020 zlatan.zip
 226 Transfer complete
 ```
+
+Download all zip files:
+```shell
+ftp> prompt
+Interactive mode off.
+ftp> mget *
+```
+
+```shell
+ftp> prompt                                                                                                                                                    
+Interactive mode off.                                                                                                                                          
+ftp> mget *                                                                                                                                                    
+local: jessica.zip remote: jessica.zip                                                                                                                         
+229 Entering Extended Passive Mode (|||16029|)                                                                                                                 
+150 Opening BINARY mode data connection for jessica.zip (1477 bytes)                                                                                           
+100% |******************************************************************************************************************|  1477       32.01 MiB/s    00:00 ETA 
+226 Transfer complete                                                                                                                                          
+1477 bytes received in 00:00 (13.36 KiB/s)                                                                                                                     
+local: bud.zip remote: bud.zip                                                                                                                                 
+229 Entering Extended Passive Mode (|||27241|)                                                                                                                 
+150 Opening BINARY mode data connection for bud.zip (1477 bytes)                                                                                               
+100% |******************************************************************************************************************|  1477       23.87 MiB/s    00:00 ETA 
+226 Transfer complete                                                                                                                                          
+1477 bytes received in 00:00 (13.56 KiB/s)                                                                                                                     
+local: marge.zip remote: marge.zip                                                                                                                             
+229 Entering Extended Passive Mode (|||56148|)                                                                                                                 
+150 Opening BINARY mode data connection for marge.zip (1477 bytes)                                                                                             
+100% |******************************************************************************************************************|  1477       15.14 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (13.85 KiB/s)
+local: homer.zip remote: homer.zip
+229 Entering Extended Passive Mode (|||24880|)
+150 Opening BINARY mode data connection for homer.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477       32.01 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (14.43 KiB/s)
+local: john.zip remote: john.zip
+229 Entering Extended Passive Mode (|||64341|)
+150 Opening BINARY mode data connection for john.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477       27.61 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (12.91 KiB/s)
+local: cathrine.zip remote: cathrine.zip
+229 Entering Extended Passive Mode (|||55034|)
+150 Opening BINARY mode data connection for cathrine.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477      136.29 KiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (13.02 KiB/s)
+local: ariel.zip remote: ariel.zip
+229 Entering Extended Passive Mode (|||25135|)
+150 Opening BINARY mode data connection for ariel.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477       22.35 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (13.90 KiB/s)
+local: anna.zip remote: anna.zip
+229 Entering Extended Passive Mode (|||25872|)
+150 Opening BINARY mode data connection for anna.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477       30.62 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (14.50 KiB/s)
+local: welcome.msg remote: welcome.msg
+229 Entering Extended Passive Mode (|||40133|)
+150 Opening BINARY mode data connection for welcome.msg (170 bytes)
+100% |******************************************************************************************************************|   170        1.19 MiB/s    00:00 ETA
+226 Transfer complete
+170 bytes received in 00:00 (1.63 KiB/s)
+local: tom.zip remote: tom.zip
+229 Entering Extended Passive Mode (|||10886|)
+150 Opening BINARY mode data connection for tom.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477       36.11 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (14.34 KiB/s)
+local: zlatan.zip remote: zlatan.zip
+229 Entering Extended Passive Mode (|||56847|)
+150 Opening BINARY mode data connection for zlatan.zip (1477 bytes)
+100% |******************************************************************************************************************|  1477       32.75 MiB/s    00:00 ETA
+226 Transfer complete
+1477 bytes received in 00:00 (13.80 KiB/s)
+```
+
+Crack downloaded .zip file:
+```shell
+for file in *zip; do
+echo "Cracking $file..."
+    fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt "$file"
+done
+```
